@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Cabecera-->
+    <head>
+        <meta charset="utf-8">
+        <title> Generación de Tabla </title>
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <div class="navbar navbar-dark bg-dark p-3" style="color: white;">
+            <h3><a class="navbar-brand" href="/">Página Principal</a></h3>
+        </div>
+    </head>
+
+    <!-- Cuerpo-->
+    <body>
+        <!-- Estilo de Tabla 
+        <style>
+            table, th, td {
+                border: 2px solid black;
+            }
+        </style>
+        -->
+        <div class="container center-h center-v">
+            <div class="table-responsive-sm" style="width: 360">
+                <table class="table table-hover">
+                    <p><h3> Tabla del {{ Number }} </h3></p>
+                    <thead>
+                        <tr>
+                            <th class="text-center">Número</th>
+                            <th class="text-center"></th>
+                            <th class="text-center">Secuencia</th>
+                            <th class="text-center"></th>
+                            <th class="text-center">Resultado</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in range(1,13) %}
+                        <tr>
+                            <td class="text-center"> {{ Number }} </td>
+                            <td class="text-center"> {{ "*" }} </td>
+                            <td class="text-center"> {{ i }} </td>
+                            <td class="text-center"> {{ "=" }} </td>
+                            <td class="text-center"> {{ Number * i }} </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

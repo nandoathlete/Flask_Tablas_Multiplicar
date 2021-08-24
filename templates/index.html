@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- Cabecera-->
+    <head>
+        <meta charset="utf-8">
+        <title> Tabla de Multiplicar </title>
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <div class="navbar navbar-dark bg-dark p-1" style="color: white;">
+            <h3><a class="navbar-brand" href="/">Tablas de Multuplicar</a></h3>
+        </div>
+        <br/>
+    </head>
+    
+    <!-- Cuerpo-->
+    <body>
+        <div align='center'>
+            <form action="/getvalue" method="POST">
+                <p>Digite número para generar tabla</p>
+                <p><input type="number" name="Number"/></p>
+                <p><input type="submit" value="Generar tabla"/></p>
+            </form>
+        </div>
+    </body>
+</html>
