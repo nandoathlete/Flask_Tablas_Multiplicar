@@ -23,6 +23,6 @@ Pasos para ejecución:
 	$ pipenv install #Instala los requerimientos desde el archivo pipfile
 	$ pipenv graph #Muestra el diagrama de árbol de los paquetes instalados
 	$ pipenv shell #Inicia la terminal shell para ejecutar codigo por medio de pipenv
-	$python main.py #Ejecuta Script "aplicativo web"
+	$ python main.py #Ejecuta Script "aplicativo web"
 	#CRTL + C para parar la ejecución
 	$ exit #Para salir de la terminal shell
